@@ -13,3 +13,5 @@ echo "cd = change directory"
 
 echo "after we have to add path"
 
+like cd /c/home/devops/krishna-88s--
+
