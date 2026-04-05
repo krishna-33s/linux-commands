@@ -7,3 +7,9 @@ echo "lets prepare"
 
 echo "basic linux-commands"
 
+echo "pwd =present working directory"
+
+echo "cd = change directory"
+
+echo "after we have to add path"
+
