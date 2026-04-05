@@ -5,3 +5,5 @@ echo "hello krishna!"
 
 echo "lets prepare"
 
+echo "basic linux-commands"
+
