@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-sub1=228729
-sub2=8928
+sub1=22
+sub2=10
 
 sub=$((sub1-sub2))
 
