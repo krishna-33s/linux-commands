@@ -3,7 +3,7 @@
 
 task_time=$(date +%s)
 
-
+echo "started:$task_time"
 sleep 15
 
 end_task_time=$(date +%s)
