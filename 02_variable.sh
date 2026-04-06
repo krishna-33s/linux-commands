@@ -1,9 +1,9 @@
 #!/bin/bash
 
-$1="ramesh"
-$2="rajesh"
+person1="ramesh"
+person2="rajesh"
 
-echo "$1:: hii $2! how are you!"
-echo "$2:: fine da what about you" 
-echo "$1:: where are you right now"
-echo "$2:: i am currently staying at hyderabad"
+echo "$person1:: hii $person2 ! how are you!"
+echo "$person2:: fine da what about you" 
+echo "$person1:: where are you right now"
+echo "$person2:: i am currently staying at hyderabad"
