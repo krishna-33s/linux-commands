@@ -1,6 +1,6 @@
 #!/bin/bash
 
-directory=$HOME
+directory=$USER
 echo "present directory:$directory"
 task_time=$(date +%s)
 
