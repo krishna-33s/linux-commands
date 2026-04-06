@@ -8,3 +8,7 @@ echo "user_name is : $user_name"
 echo "pls enter password:"
 read -s password
 echo "password is $password"
+
+
+
+
