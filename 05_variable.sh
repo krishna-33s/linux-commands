@@ -1,12 +1,12 @@
 #!/bin/bash
 
 
-task_time=$(date)
+task_time=$(date +%s)
 
-echo "started time:$task_time"
 
 sleep 15
 
-end_task_time=$(date)
+end_task_time=$(date +%s)
 
-echo "end time:$end_task_time"
+total_time=$(($end_task_time-$task_time))
+echo "time taken:$total_time"
