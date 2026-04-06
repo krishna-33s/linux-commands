@@ -1,5 +1,8 @@
 #!/bin/bash
 
+$1="ramesh"
+$2="rajesh"
+
 echo "krishna: hii ravi! how are you!"
 echo "ravi   : fine da what about you" 
 echo "krishna: where are you right now"
