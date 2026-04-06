@@ -1,7 +1,6 @@
 #!/bin/bash
 
-directory=$!
-echo "present directory:$directory"
+
 task_time=$(date +%s)
 
 echo "started:$task_time"
