@@ -27,6 +27,6 @@ do
         dnf install $pack -y &>>$log_file
         Validate $? "$pack install"
     else 
-        dnf "$pack is already installed ,soo bye"
+        echo "$pack is already installed ,soo bye"
     fi        
 done    
