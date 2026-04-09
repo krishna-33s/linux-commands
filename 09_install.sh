@@ -1,11 +1,11 @@
 #!/bin/bash
 
-user-id=$(id -u)
+user_id=$(id -u)
 
-if [ $user-id -ne 0 ]; then 
+if [ $user_id -ne 0 ]; then 
     echo "please run with root user"
     exit 1
-if    
+fi
 
 echo "installing nginx"
 dnf install nginx -y
