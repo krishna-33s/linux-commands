@@ -21,7 +21,7 @@ Validate(){
 
 for pack in $@
 do 
-    dnf list installed $pack &>>$log_file
+    dnf list install $pack &>>$log_file
     if [ $? -ne 0 ]; then 
         echo "$pack is not installed ,installing now"
         dnf install $pack -y &>>$log_file
