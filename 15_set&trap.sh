@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-trap "echo'error occured in $LINENO,Command: $BASH_COMMAND'" ERR
+trap "echo 'error occured in $LINENO,Command: $BASH_COMMAND'" ERR
 
 user_id=$(id -u)
 log_folder="/var/log/shell"
@@ -25,7 +25,7 @@ for pack in $@
 do 
     dnf list installed $pack &>>$log_file
     if [ $? -ne 0 ]; then 
-        echo -"$pack is not installed ,installing now"
+        echo "$pack is not installed ,installing now"
         dnf install $pack -y &>>$log_file
     else 
         echo -e "$pack is already installed ,$R soo bye $N"
