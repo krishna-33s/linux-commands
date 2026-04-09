@@ -20,7 +20,7 @@ Validate(){
         echo "$2...$Y failed $N" | tee -a $log_file
         exit 1
     else
-        echo "$2...$R success $N" | tee -a $log_file
+        echo -e "$2...$R success $N" | tee -a $log_file
     fi
 }
 
@@ -28,10 +28,10 @@ for pack in $@
 do 
     dnf list installed $pack &>>$log_file
     if [ $? -ne 0 ]; then 
-        echo "$pack is not installed ,installing now"
+        echo -"$pack is not installed ,installing now"
         dnf install $pack -y &>>$log_file
         Validate $? "$pack install"
     else 
-        echo "$pack is already installed ,$R soo bye $N"
+        echo -e "$pack is already installed ,$R soo bye $N"
     fi        
 done
