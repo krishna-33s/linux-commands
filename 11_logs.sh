@@ -8,7 +8,7 @@ if [ $user_id -ne 0 ]; then
 
 fi
 
-mkdir -p $logs_folder
+mkdir -p $log_folder
 
 Validate(){
     if [ $1 -ne 0 ]; then
@@ -25,5 +25,5 @@ Validate $? "installing nginx"
 dnf install mysql -y &>> $log_file
 Validate $? "installing mysql"
 
-dnf install nodejnijjs -y &>> $log_file
+dnf install nodejs -y &>> $log_file
 Validate $? "installing nodejs"
