@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-trap "echo 'error occured in $LINENO,Command: $BASH_COMMAND'" ERR
+trap "echo 'error occured in $LINENO, Command: $BASH_COMMAND'" ERR
 
 user_id=$(id -u)
 log_folder="/var/log/shell"
