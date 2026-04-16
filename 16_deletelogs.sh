@@ -17,5 +17,7 @@ fi
 find_files=$(find $log_dir -name "*.log" -mtime +14)
 
 while IFS= read -r path; do 
-    echo "$path"
+    echo "deleting file: $path"
+    rm -r $path
+    echo "deleted file: $path"
 done <<< $find_files    
