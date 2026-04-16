@@ -15,7 +15,6 @@ if [ ! -d $log_dir]; then
 fi
 
 find_files=$(find $log_dir -name "*.log" -mtime +14)
-echo "$find_files"
 
 while IFS= read -r path; do 
     echo "$path"
