@@ -16,3 +16,7 @@ fi
 
 find_files=$(find $log_dir -name "*.log" -mtime +14)
 echo "$find_files"
+
+while IFS= read -r path; do 
+    echo "$path"
+done <<< $find_files    
