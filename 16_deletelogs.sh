@@ -9,7 +9,7 @@ log_dir="/home/ec2-user/app-log"
 log_file="$log_dir/$0.log"
 
 
-if [ ! -d $log_dir]; then 
+if [ ! -d $log_dir ]; then 
     echo "directory does not exist"
     exit 1
 fi
