@@ -2,14 +2,14 @@
 
 user_id=$(id -u)
 log_dir="/var/log/shell-script"
-log_file="$log_dir/$0.log"
+log_file="$log_dir/backup.log"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 source_dir=$1
 dest_dir=$2
-days=${2:-14}
+days=${3:-14}
 
 if [ $user_id -ne 0 ]; then
         echo -e "$R pls run the script to root user $N" | tee -a $log_file
