@@ -7,7 +7,9 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-
+source_dir=$1
+dest_dir=$2
+days=${2:-14}
 
 if [ $user_id -ne 0 ]; then
         echo -e "$r pls run the script to root user $n" | tee -a $log_file
