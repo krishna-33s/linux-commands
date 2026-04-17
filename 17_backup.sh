@@ -17,7 +17,7 @@ if [ $user_id -ne 0 ]; then
 
 fi
 
-mkdir -p log_dir
+mkdir -p $log_dir
 
 USAGE(){
     echo -e "$R sudo backup <source_dir> <dest_dir> <days>[default 14 days] $N"
