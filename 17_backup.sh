@@ -49,7 +49,11 @@ log "source directory: $source_dir"
 log "destination: $dest_dir"
 log "days: $days"
 
-if [ -z "$files" ]; then 
+if [ -z "${files}" ]; then 
     log "no files to archieve ...$Y leaving $N"
-fi 
-    
+else 
+    log "files found to archieve: $files"
+    timestamp=$(date +%F-%H-%M-%S)
+    zip_file="$dest_dir/app-log-$timestamp.tar.gz"
+    echo "archieve name: $zip_file"
+fi    
