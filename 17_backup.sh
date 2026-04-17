@@ -23,5 +23,5 @@ USAGE(){
 }
 
 if [ $# -lt 2 ]; then 
-    usage 
+    USAGE 
 fi    
