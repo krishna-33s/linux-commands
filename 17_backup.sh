@@ -1,7 +1,7 @@
 #!/bin/bash
 
 user_id=$(id -u)
-log_dir="/var/log/linux-commands"
+log_dir="/var/log/shell-script"
 log_file="$log_dir/$0.log"
 R="\e[31m"
 G="\e[32m"
