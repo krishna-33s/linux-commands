@@ -12,7 +12,7 @@ dest_dir=$2
 days=${2:-14}
 
 if [ $user_id -ne 0 ]; then
-        echo -e "$r pls run the script to root user $n" | tee -a $log_file
+        echo -e "$R pls run the script to root user $N" | tee -a $log_file
         exit 1
 
 fi
@@ -25,7 +25,7 @@ USAGE(){
 }
 
 log(){
-    echo -e "$(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $log_file
+    echo -e "$G $(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $log_file
 }
 
 if [ $# -lt 2 ]; then 
