@@ -62,9 +62,9 @@ else
         log "archeival is...$G success $N"
 
         while IFS= read -r path; do 
-        echo "deleting file: $path"
+        log "deleting file: $path"
         rm -f $path
-        echo "deleted file: $path"
+        log "deleted file: $path"
         done <<< $files
     else 
         log "archeival is...$R failure $N"
