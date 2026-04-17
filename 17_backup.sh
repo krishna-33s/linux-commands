@@ -11,6 +11,10 @@ source_dir=$1
 dest_dir=$2
 days=${3:-14}
 
+log(){
+    echo -e "$G $(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $log_file
+}
+
 if [ $user_id -ne 0 ]; then
         log -e "$R pls run the script to root user $N" | tee -a $log_file
         exit 1
@@ -20,13 +24,10 @@ fi
 mkdir -p $log_dir
 
 USAGE(){
-    log "$R sudo backup <source_dir> <dest_dir> <days>[default 14 days] $N"
+    log "$R usage :: sudo backup <source_dir> <dest_dir> <days>[default 14 days] $N"
     exit 1
 }
 
-log(){
-    echo -e "$G $(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $log_file
-}
 
 if [ $# -lt 2 ]; then 
     USAGE 
