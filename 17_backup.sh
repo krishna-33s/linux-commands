@@ -48,3 +48,8 @@ log "backup started"
 log "source directory: $source_dir"
 log "destination: $dest_dir"
 log "days: $days"
+
+if [ -z "$files" ]; then 
+    log "no files to archieve ...$Y leaving $N"
+fi 
+    
