@@ -63,7 +63,7 @@ else
 
         while IFS= read -r path; do 
         echo "deleting file: $path"
-        rm -f $path
+        rm -r $path
         echo "deleted file: $path"
         done <<< $files
     else 
