@@ -18,7 +18,7 @@ do
     usage=$($line | awk '{print $6}'|cut -d "%" -f1)
     partition_name=$(df -hT | grep -v Filesystem | awk '{print $7}')
 
-    if [ "$usage" -gt "$usage_threshold" ]; then
+    if [ "$usage" -ge "$usage_threshold" ]; then
         message+="high disk usage on $partition_name: $usage
     fi
 
